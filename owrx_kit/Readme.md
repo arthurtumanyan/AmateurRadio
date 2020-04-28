@@ -20,7 +20,7 @@ Please let me know once you noticed any bug or have improvement offer.
 
 Usage:
 
-	Copy owc.py and bands.py to openwebrx root folder anlong with config_webrx.py
+	Copy owc.py and bands.py to openwebrx root folder along with config_webrx.py
 	Move sdr {} section from config_webrx.py to bands.py
 	Include bands.py instead of sdr {} section
 	chmod +x owc.py
