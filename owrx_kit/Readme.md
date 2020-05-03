@@ -26,9 +26,7 @@ Usage:
 	chmod +x owc.py
 	./owc.py #make sure you have python3.8 
     
-TODO
 
-	Rewrite configurator script using OOP aproach 
 73,
 EK6RAM
   
