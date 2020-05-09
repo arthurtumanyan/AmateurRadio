@@ -19,6 +19,13 @@ sudo make install
 sudo ldconfig
 cd ..
 
+echo "Installing js8py"
+
+git clone https://github.com/jketterl/js8py.git
+cd js8py
+sudo python3 setup.py install
+cd ..
+
 echo "Installing OWRX"
 
 git clone https://github.com/jketterl/owrx_connector.git
@@ -82,7 +89,7 @@ cd /opt/openwebrx && sudo git checkout release-0.18
 sudo sed 's/\/usr\/bin\/openwebrx/\/opt\/openwebrx\/openwebrx.py/g' systemd/openwebrx.service > /etc/systemd/system/openwebrx.service
 sudo cp openwebrx /etc/init.d/
 sudo chmod +x /etc/init.d/openwebrx
-sudo adduser  --home /opt/openwebrx --shell /bin/false --no-create-home --disabled-password --disabled-login --gecos "" -u 77 -g  77 openwebrx
+sudo adduser  --home /opt/openwebrx --shell /bin/false --no-create-home --disabled-password --disabled-login --gecos "" -u 77 --group  77 openwebrx
 
 sudo chown -R openwebrx:openwebrx /opt/openwebrx
 
